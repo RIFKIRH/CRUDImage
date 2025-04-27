@@ -1,0 +1,58 @@
+.file-container {
+    display: flex;
+    flex-direction: column; /* Tata letak vertikal */
+    align-items: flex-start; /* Pastikan elemen berada di sebelah kiri */
+    gap: 1rem; /* Tambahkan jarak antara elemen */
+  }
+  
+  .preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Pastikan elemen berada di sebelah kiri */
+    margin-top: 1rem; /* Tambahkan jarak di atas */
+  }
+  
+  .preview-container img {
+    width: 128px; /* Ukuran tetap untuk gambar */
+    height: 128px; /* Ukuran tetap untuk gambar */
+    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+    border: 1px solid #ddd; /* Tambahkan border untuk estetika */
+    border-radius: 8px; /* Tambahkan border-radius untuk sudut melengkung */
+    margin-bottom: 0.5rem; /* Tambahkan jarak di bawah gambar */
+  }
+  
+  .preview-container button {
+    width: 100px; /* Atur lebar tombol */
+  }
+
+  /* Tambahkan ke file AddProduct.css atau file CSS terkait */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Jarak antar tombol */
+}
+
+.button-container .button {
+  flex: 1; /* Membuat tombol memiliki ukuran yang sama besar */
+  text-align: center;
+  padding: 10px 0; /* Menambahkan padding vertikal */
+  font-size: 14px; /* Ukuran font */
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+}
+
+.button-container .button.is-success {
+  background-color: #28a745; /* Warna hijau untuk tombol Edit */
+  color: white;
+  border: none;
+}
+
+.button-container .button.is-danger {
+  background-color: #dc3545; /* Warna merah untuk tombol Delete */
+  color: white;
+  border: none;
+}
+
+.button-container .button:hover {
+  opacity: 0.9; /* Efek hover */
+  cursor: pointer;
+}

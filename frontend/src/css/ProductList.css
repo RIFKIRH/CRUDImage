@@ -1,0 +1,115 @@
+.custom-card {
+    height: 400px; /* Tinggi tetap untuk semua card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .custom-card .card-content {
+    flex-grow: 1; /* Isi ruang yang tersedia */
+  }
+  
+  .custom-card .card-image img {
+    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+    height: 200px; /* Tinggi gambar seragam */
+    width: 100%; /* Lebar gambar memenuhi card */
+  }
+
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Pastikan card mengisi tinggi kolom */
+}
+
+.card-content {
+  flex-grow: 1; /* Membuat konten card mengisi ruang yang tersedia */
+}
+
+.card-footer {
+  margin-top: auto; /* Memastikan footer berada di bagian bawah card */
+}
+
+.card-image img {
+  object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+  height: 200px; /* Tinggi gambar seragam */
+  width: 100%; /* Lebar gambar memenuhi card */
+}
+/* Atur tata letak tombol di footer */
+.card-footer {
+  display: flex;
+  gap: 10px; /* Jarak antar tombol */
+}
+
+.card-footer .button {
+  flex: 1; /* Membuat tombol memiliki ukuran yang sama besar */
+  text-align: center;
+  padding: 10px 0; /* Menambahkan padding vertikal */
+  font-size: 14px; /* Ukuran font */
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+}
+
+/* Atur tata letak tombol di footer */
+.card-footer {
+  display: flex;
+  gap: 10px; /* Jarak antar tombol */
+}
+
+.card-footer .button {
+  flex: 1; /* Membuat tombol memiliki ukuran yang sama besar */
+  text-align: center;
+  padding: 10px 0; /* Menambahkan padding vertikal */
+  font-size: 14px; /* Ukuran font */
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+}
+
+.card-footer .button.is-success {
+  background-color: #28a745; /* Warna hijau untuk tombol Edit */
+  color: white;
+  border: none;
+}
+
+.card-footer .button.is-danger {
+  background-color: #dc3545; /* Warna merah untuk tombol Delete */
+  color: white;
+  border: none;
+}
+
+.card-footer .button:hover {
+  opacity: 0.9; /* Efek hover */
+  cursor: pointer;
+}
+
+/* Atur tata letak tombol di footer */
+.card-footer {
+  display: flex;
+  gap: 0; /* Hilangkan jarak antar tombol */
+}
+
+.card-footer .button {
+  flex: 1; /* Membuat tombol memiliki ukuran yang sama besar */
+  text-align: center;
+  padding: 10px 0; /* Menambahkan padding vertikal */
+  font-size: 14px; /* Ukuran font */
+  border-radius: 0; /* Hilangkan sudut melengkung */
+  border: none; /* Hilangkan border */
+}
+
+.card-footer .button.is-success {
+  background-color: #28a745; /* Warna hijau untuk tombol Edit */
+  color: white;
+}
+
+.card-footer .button.is-danger {
+  background-color: #dc3545; /* Warna merah untuk tombol Delete */
+  color: white;
+}
+
+.card-footer .button:hover {
+  opacity: 0.9; /* Efek hover */
+  cursor: pointer;
+}
+
+.card-footer .button:first-child {
+  border-right: 1px solid #fff; /* Tambahkan garis pemisah di antara tombol */
+}
